@@ -1,8 +1,11 @@
 {
   "name": "compra-tech",
   "version": "0.1.0",
+  "homepage": "https://mateobaltar.github.io/CompraTech-Ecommerce",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -22,5 +25,8 @@
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
     "stripe": "^8.222.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
