@@ -58,11 +58,11 @@ const ProductDetails = ({ products, product }) => {
             </div>
             <p>(20)</p>
           </div>
-          <h4>Details: </h4>
-          <p>{details}</p>
+          <h4>Detalles: </h4>
+          <p id="details">{details}</p>
           <p className="price">${price}</p>
           <div className="quantity">
-            <h3>Quantity:</h3>
+            <h3>Cantidad:</h3>
             <p className="quantity-desc">
               <span className="minus" onClick={decQty}>
                 <AiOutlineMinus />
@@ -79,17 +79,17 @@ const ProductDetails = ({ products, product }) => {
               className="add-to-cart"
               onClick={() => onAdd(product, qty)}
             >
-              Add to Cart
+              Añadir al carro
             </button>
             <button type="button" className="buy-now">
-              <Link href="/success">Buy now</Link>
+              <Link href="/success">Comprar ahora</Link>
             </button>
           </div>
         </div>
       </div>
 
       <div className="maylike-products-wrapper">
-        <h2>You may also like</h2>
+        <h2>Quiza te interese</h2>
         <div className="marquee">
           <div className="maylike-products-container track">
             {products.map((item) => (
