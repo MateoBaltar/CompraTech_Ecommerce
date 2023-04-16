@@ -121,6 +121,8 @@ span.text-red {
 
 .product-name {
   font-weight: 500;
+  overflow: hidden;
+  width: 250px;
 }
 .product-price {
   font-weight: 800;
