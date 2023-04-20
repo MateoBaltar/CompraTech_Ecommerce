@@ -102,7 +102,7 @@ const Cart = () => {
             </div>
             <div className="btn-container">
               <button type="button" className="btn">
-                <Link href="/success">Buy now</Link>
+                <Link href="/success">Comprar ahora</Link>
               </button>
             </div>
           </div>
